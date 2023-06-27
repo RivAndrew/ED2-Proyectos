@@ -10,7 +10,7 @@ namespace Graficas
     {
         static void Main(string[] args)
         {
-            List<Lista> grafo = new List<Lista>(5);
+            List<Lista> grafo = new List<Lista>();
             Lista verticeA = new Lista("a");
             Lista verticeE = new Lista("e");
             Lista verticeI = new Lista("i");

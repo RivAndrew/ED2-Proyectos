@@ -20,7 +20,7 @@ namespace Hash
             grafo.Insert(verticeA.FuncionHash(datoA.Clave,size), verticeA);
 
             // Siguiendo con el ejemplo se agrega otro valor con clave IIII que deberia realizar una colision
-            // ya que ocasiona colision este nuevo valor lo relaciono con el que estaba en esa posicion.
+            // ya que ocasiona colision este nuevo valor se relaciona con el que estaba en esa posicion.
             Dato datoB = new Dato("IIII", "NADA");
             Lista verticeB = new Lista("NADA");
 
