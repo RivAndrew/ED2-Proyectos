@@ -5,6 +5,10 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graficas", "Graficas\Graficas.csproj", "{0709542F-E40F-412C-A87E-2F63D4480E47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodosOrdenamiento", "MetodosOrdenamiento\MetodosOrdenamiento.csproj", "{3F5691CC-86D1-4186-AB9C-A5E2B9CF1D07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash", "Hash\Hash.csproj", "{D9BBE138-1492-47B1-A59C-F245BA95A3A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{0709542F-E40F-412C-A87E-2F63D4480E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0709542F-E40F-412C-A87E-2F63D4480E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0709542F-E40F-412C-A87E-2F63D4480E47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F5691CC-86D1-4186-AB9C-A5E2B9CF1D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F5691CC-86D1-4186-AB9C-A5E2B9CF1D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F5691CC-86D1-4186-AB9C-A5E2B9CF1D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F5691CC-86D1-4186-AB9C-A5E2B9CF1D07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9BBE138-1492-47B1-A59C-F245BA95A3A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9BBE138-1492-47B1-A59C-F245BA95A3A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9BBE138-1492-47B1-A59C-F245BA95A3A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9BBE138-1492-47B1-A59C-F245BA95A3A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

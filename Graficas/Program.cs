@@ -10,41 +10,29 @@ namespace Graficas
     {
         static void Main(string[] args)
         {
-            List<Lista> grafo = new List<Lista>();
-            Lista listaA = new Lista();
-            Lista listaE= new Lista();
-            Lista listaI = new Lista();
-            Lista listaO = new Lista();
-            Lista listaU = new Lista();
+            List<Lista> grafo = new List<Lista>(5);
+            Lista verticeA = new Lista("a");
+            Lista verticeE = new Lista("e");
+            Lista verticeI = new Lista("i");
+            Lista verticeO = new Lista("o");
+            Lista verticeU = new Lista("u");
 
-            listaA.AgregarNodo("a");
-            listaA.AgregarNodo("e");
-            listaA.AgregarNodo("i");
-            grafo.Add(listaA);
+            verticeA.Relacionar(verticeE);
+            verticeA.Relacionar(verticeI);
+            grafo.Add(verticeA);
 
-            listaE.AgregarNodo("e");
-            listaE.AgregarNodo("o");
-            grafo.Add(listaE);
+            verticeE.Relacionar(verticeO);
+            grafo.Add(verticeE);
 
-            listaI.AgregarNodo("i");
-            listaI.AgregarNodo("u");
-            grafo.Add(listaI);
+            verticeI.Relacionar(verticeU);
+            grafo.Add(verticeI);
 
-            listaO.AgregarNodo("o");
-            listaO.AgregarNodo("i");
-            grafo.Add(listaO);
+            verticeO.Relacionar(verticeI);
+            grafo.Add(verticeO);
 
-            listaU.AgregarNodo("u");
-            listaU.AgregarNodo("a");
-            listaU.AgregarNodo("o");
-            grafo.Add(listaU);
-
-            Console.WriteLine("Gráfica dirigida: ");
-            for (int i = 0;i < grafo.Count; i++)
-            {
-                Console.WriteLine(grafo[i].RecorrerLista());
-            }
-
+            verticeU.Relacionar(verticeA);
+            verticeU.Relacionar(verticeO);
+            grafo.Add(verticeU);
 
             Console.ReadKey();
         }
