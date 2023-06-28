@@ -11,13 +11,13 @@ namespace Hash
         static void Main(string[] args)
         {
             int size = 4;   // Tamaño de la lista
-            List<Lista> grafo = new List<Lista>(new Lista[size]);
+            List<Lista> hash = new List<Lista>(new Lista[size]);
 
             // Usando el ejemplo de la presentacion agrego a una lista de tamaño 5 el valor MUNDO con clave HOLA
             // que se asignara en el indice 2.
             Dato datoA = new Dato("HOLA", "MUNDO");
             Lista verticeA = new Lista("MUNDO");
-            grafo.Insert(verticeA.FuncionHash(datoA.Clave,size), verticeA);
+            hash.Insert(verticeA.FuncionHash(datoA.Clave,size), verticeA);
 
             // Siguiendo con el ejemplo se agrega otro valor con clave IIII que deberia realizar una colision
             // ya que ocasiona colision este nuevo valor se relaciona con el que estaba en esa posicion.
@@ -33,7 +33,7 @@ namespace Hash
             // Se agrega otro valor con indice en 4
             Dato datoC = new Dato("Estructura", "ED");
             Lista verticeC = new Lista("ED");
-            grafo.Insert(verticeC.FuncionHash(datoC.Clave, size), verticeC);
+            hash.Insert(verticeC.FuncionHash(datoC.Clave, size), verticeC);
 
             Console.ReadKey();
         }
